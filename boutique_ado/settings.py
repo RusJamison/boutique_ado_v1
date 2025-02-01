@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-6hb*kiq@acfk6=*ad_9^0f_&nrd+t92m_$^9w#69=%^s%6ls7h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-rusjamison-boutiqueadov-qybxldwtfe5.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = [
+    '8000-rusjamison-boutiqueadov-qybxldwtfe5.ws.codeinstitute-ide.net',
+    '8000-rusjamison-boutiqueadov-xyc3v5wtfe5.ws.codeinstitute-ide.net',
+]
 
 
 # Application definition
@@ -59,6 +62,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'boutique_ado.urls'
